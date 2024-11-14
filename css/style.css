@@ -1,0 +1,168 @@
+*{
+padding : 0;
+margin : 0;
+box-sizing:border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #000000a6;
+    color: #fff;  
+    
+}
+
+.container{
+    width: 400px;
+     padding: 20px;
+     background-color: #279FD1;
+     border-radius: 10px;  
+}
+
+.back{
+    width: 30px;
+
+
+}
+
+ .textP{
+    margin-left: 20px;
+    
+    width: 45%;
+}
+ .textP h2{
+    font-size: 2.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+ .textP p{
+    color: #000000c2;
+    opacity: .8;
+}
+
+ .imgP img{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 105px;
+    left: 220px;
+    
+}
+
+  .formControl{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+    bottom: 70px;
+}
+
+.formControl label{
+    margin-bottom: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.rem;
+}
+
+.formControl input{
+    width: 80%;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid #ffffff9b;
+    padding-left: 10px;
+}
+
+.errorMsg{
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    bottom: 56px;
+    left: 40px;
+    display: none;   
+}
+
+.loader{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid transparent;
+    animation: loader 2s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes loader {
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.mainData{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    bottom: 40px;
+}
+
+.mainData h1{
+    font-size: 3.1rem;
+    letter-spacing: 2px;
+}
+
+.mainData .time {
+    opacity: .7;
+}
+
+.mainData .temp{
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+.type{
+    font-size: 2.1rem;
+    font-weight: bold;
+ 
+}
+
+.mainData span{
+    font-size: 5.1rem;
+    font-weight: 50;
+    opacity: .9;
+}
+
+.extaDetails{
+    width: 100%;
+    height: 120px;
+    background-color: #4d383879;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winds{
+    display: flex;
+    align-items: center;
+
+}
+
+
+@media (max-width=768px){
+    container{
+        width: 90%;
+    }
+}
